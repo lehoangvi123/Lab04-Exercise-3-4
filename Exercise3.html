@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer</title>
+    <link rel="stylesheet" href="Exercise3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+</head>
+<body>   
+
+
+    <!-- Main Wrapper -->
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <header>
+                <h2>Le Hoang Vi</h2>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://lehoangvi123.github.io/Web-application-dev-Lab02/project.html">Projects</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="projects">
+                <h3>Projects</h3>
+                <ul>
+                    <li>Project Shopee Website</li>
+                    <li>Code Music Player</li>
+                    <li>2048 Project Game</li>
+                    <li>Candy Cursh Saga</li> 
+                    <li>Jesuit Website</li> 
+                    <li>MERN Employee Management</li>
+                </ul>
+            </section> 
+
+            <section> 
+                <h3>Education</h3> 
+                <h4>Ho Chi Minh International University</h4>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li> 
+                    <li>Nodejs</li> 
+                    <li>Reactjs</li> 
+                    <li>MongoDB</li> 
+                    <li>mySQL</li> 
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Responsive Design</li> 
+                    <li>Tailwind CSS</li> 
+                    <li>Bootstrap</li> 
+                    <li>RestAPI</li> 
+                    <p>Authentication and authorization</p>
+                </ul>
+            </section>
+
+            <section class="education">
+                <h3>Position</h3>
+                <p>Software Engineering</p> 
+                <p>Fullstack developer</p>
+            </section>
+
+            
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="https://lehoangvi123.github.io/Web-application-dev-Lab02/project.html">Projects</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="intro">
+                <h1>Fullstack Developer</h1>
+                <p>Consist of Frontend and Backend developer</p>
+            </section>
+
+            <section class="content">
+                <div class="work-experience">
+                    <h3>Work Experience</h3>
+                    <p>Worked on frontend projects with various companies.</p> 
+                    <p>Google - Frontend Developer</p> 
+                    <p>Meta - UI Engineer</p> 
+                    <p>Netflix - Web Performace Specialist</p> 
+                    <p>Amazon - E-commerce Frontend Expert</p>
+                </div>
+
+                <div class="reviews">
+                    <h3>Reviews from my Teachers</h3>
+                    <p>"An excellent developer with attention to detail!"</p> 
+                    <p>🌟 "Vĩ is one of the most detail-oriented developers I have ever taught. His ability to solve complex frontend challenges is truly impressive!"</p>
+                    <p>💡 "His problem-solving skills and passion for learning make him stand out. He always delivers clean, optimized, and efficient code."</p>
+                    <p>🚀 "With a strong understanding of UI/UX principles, Vĩ creates user-friendly interfaces that feel natural and intuitive!"</p>
+                    <p>🔥 "An exceptional developer who combines technical expertise with creativity. He has the mindset of a true problem-solver!"</p>
+                </div>
+            </section>
+        </div> 
+
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+
+
+    </div>  
+    
+
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+            // Store preference in localStorage
+            if (document.body.classList.contains("dark-mode")) {
+                localStorage.setItem("theme", "dark");
+            } else {
+                localStorage.setItem("theme", "light");
+            }
+        }
+
+        // Load saved theme
+        window.onload = function () {
+            if (localStorage.getItem("theme") === "dark") {
+                document.body.classList.add("dark-mode");
+            }
+        };
+    </script>
+
+</body>
+</html>

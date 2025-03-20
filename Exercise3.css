@@ -1,0 +1,119 @@
+/* 🌙 Light & Dark Mode Variables */
+:root {
+    --bg-color: #f4f4f4;
+    --text-color: #000;
+    --sidebar-bg: #eaeaea;
+    --card-bg: #fff;
+}
+
+.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #fff;
+    --sidebar-bg: #2b2b2b;
+    --card-bg: #333;
+}
+
+
+/* Google Font */
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color); 
+    display: flex;
+    justify-content: center;
+}
+
+/* Main Layout */
+.wrapper {
+    display: flex;
+    max-width: 1100px;
+    width: 100%;
+    background: var(--card-bg);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: var(--sidebar-bg);
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;  
+    display: flex;
+    justify-content: space-around; 
+
+
+} 
+
+
+
+.sidebar nav ul li {
+    margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+} 
+
+.main-content ul{ 
+    list-style-type: none; 
+    display: flex; 
+    justify-content: space-around;
+} 
+
+.main-content ul li a{ 
+    text-decoration: none;
+    color: black;
+}
+
+.intro {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-experience, .reviews {
+    width: 48%;
+}
+
+/* Responsive for Mobile */
+@media screen and (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-experience, .reviews {
+        width: 100%;
+    }
+}
