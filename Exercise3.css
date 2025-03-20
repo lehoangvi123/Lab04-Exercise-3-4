@@ -1,9 +1,9 @@
 /* 🌙 Light & Dark Mode Variables */
 :root {
-    --bg-color: #f4f4f4;
+    --bg-color: #fa8ee3;
     --text-color: #000;
     --sidebar-bg: #eaeaea;
-    --card-bg: #fff;
+    --card-bg: #f16c6c;
 }
 
 .dark-mode {
